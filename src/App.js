@@ -1,30 +1,37 @@
-import React from 'react'
+import React from "react";
 
 // React Router
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Pages
-import Home from './Components/Home/Home'
-import Task from './Components/Tasks/Task'
-import User from './Components/User/User'
-import ErrorPage from './Components/ErrorPage/ErrorPage'
+import Home from "./Components/Home/Home";
+import Task from "./Components/Tasks/Task";
+import User from "./Components/User/User";
+import Login from "./Components/Login/Login";
+import ErrorPage from "./Components/ErrorPage/ErrorPage";
 
-// NavBar
-import NavBar from './Components/NavBar/NavBar'
-
-
-const App = () => { 
-    return  (
+const App = () => {
+  return (
     <Router>
-        <NavBar />
-        <Switch>
-            <Route exact path='/'><Home /></Route>
-            <Route exact path='/task'><Task /></Route>
-            <Route exact path='/user'><User /></Route>
-            <Route path='*'><ErrorPage /></Route>
-        </Switch>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/task">
+          <Task />
+        </Route>
+        {/* user */}
+        <Route exact path="/user" render={(props) => <User {...props} />} />
+        {/* user */}
+        {/* Login */}
+        <Route exact path="/login" render={(props) => <Login {...props} />} />
+        {/* Login */}
+        <Route path="*">
+          <ErrorPage />
+        </Route>
+      </Switch>
     </Router>
-    )
-}
+  );
+};
 
-export default App
+export default App;

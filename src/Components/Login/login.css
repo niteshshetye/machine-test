@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600&display=swap");
+
+:root {
+  --blueDarkShade-clr: #05386b;
+  --blueLowShade-clr: #379683;
+  --pistaShade-clr: #56db95;
+  --pistaWhiteShade-clr: #8ee4af;
+  --whiteShade-clr: #edf5e1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "STIX Two Text", serif;
+}
+body {
+  background-color: var(--pistaShade-clr);
+}
+
+input {
+  height: 100%;
+  padding: 5px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+label {
+  color: var(--blueLowShade-clr);
+  font-weight: 600;
+}
+button {
+  outline: none;
+  border: none;
+}
+
+/* class */
+.login-div {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--pistaWhiteShade-clr);
+  padding: 20px;
+  margin-top: 100px;
+  width: 35%;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.form-input {
+  display: flex;
+  margin: 15px;
+  flex-direction: column;
+  font-size: 1.3rem;
+  height: 66px;
+}
+.btn {
+  font-weight: 600;
+  margin: 15px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  background-color: var(--blueDarkShade-clr);
+  color: var(--whiteShade-clr);
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: all 1s;
+}
+
+.btn:hover {
+  color: var(--blueDarkShade-clr);
+  background-color: var(--pistaWhiteShade-clr);
+}

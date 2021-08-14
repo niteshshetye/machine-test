@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+
+import NavBar from "../NavBar/NavBar";
 
 function Home() {
-    return (
-        <div>
-            Home page
-        </div>
-    )
+  return (
+    <div>
+      <NavBar />
+      Home page
+    </div>
+  );
 }
 
-export default Home
+export default Home;
