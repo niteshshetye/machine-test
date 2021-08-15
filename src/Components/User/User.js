@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
 
-import { Redirect } from "react-router-dom";
+import './user.css'
 
 function User(props) {
   const [show, setShow] = useState(true);
@@ -35,8 +35,8 @@ function User(props) {
     <>
       <NavBar />
       <div className="user-div">
-        <header>
-          <h2>Welcome to our Website !</h2>
+        <header className="user-header">
+          <h2 className='h2'>Welcome to our Website !</h2>
         </header>
         <div className="login-div">
           <form className="login-form">

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600&display=swap");
+
+:root {
+  --blueDarkShade-clr: #05386b;
+  --blueLowShade-clr: #379683;
+  --pistaShade-clr: #56db95;
+  --pistaWhiteShade-clr: #8ee4af;
+  --whiteShade-clr: #edf5e1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "STIX Two Text", serif;
+}
+
+.task-header{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.h2{
+    color: var(--whiteShade-clr);
+}
