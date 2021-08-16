@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
 
+<<<<<<< HEAD
+=======
+import './user.css'
+
+>>>>>>> faa7e300e78c5621d1ec221d08eb40f994faaf2c
 function User(props) {
   const [show, setShow] = useState(true);
   const [email, setEmail] = useState("");
@@ -33,7 +38,11 @@ function User(props) {
       <NavBar />
       <div className="user-div">
         <header className="user-header">
+<<<<<<< HEAD
           <h2 className="h2">Welcome to our Website !</h2>
+=======
+          <h2 className='h2'>Welcome to our Website !</h2>
+>>>>>>> faa7e300e78c5621d1ec221d08eb40f994faaf2c
         </header>
         <div className="login-div">
           <form className="login-form">

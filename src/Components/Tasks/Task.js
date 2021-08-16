@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
+=======
+import React,{useState, useEffect} from "react";
+>>>>>>> faa7e300e78c5621d1ec221d08eb40f994faaf2c
 import NavBar from "../NavBar/NavBar";
 
+import EachTask from "./EachTask/EachTask";
+
+import './task.css'
+
 function Task() {
+<<<<<<< HEAD
   // define states
   const [todos, setTodos] = useState([]);
 
@@ -30,10 +39,26 @@ function Task() {
   useEffect(() => {
     fetchData();
   }, []);
+=======
+  const [todos, setTodos] = useState([])
+
+  const fetchData = async () =>{
+    const resp  = await fetch('http://jsonplaceholder.typicode.com/todos')
+    const dataList = await resp.json()
+    dataList.splice(6, dataList.length-1) // outoff 200 elements only 6 we gone take
+    setTodos(dataList) 
+  }
+
+  useEffect (()=>{
+    fetchData()
+    localStorage.setItem('todos', JSON.stringify(todos))
+  },[todos])
+>>>>>>> faa7e300e78c5621d1ec221d08eb40f994faaf2c
 
   return (
     <>
       <NavBar />
+<<<<<<< HEAD
       <div className="task-div">
         <header className="task-header">
           <h2 className="h2">Todays Task</h2>
@@ -74,6 +99,18 @@ function Task() {
           <button className="task-btn add-btn" onClick={() => handleAddTask()}>
             Add Task
           </button>
+=======
+      <div className='task-div'>
+        <header className='task-header'>
+          <h2 className='h2'>Todays Task</h2>
+        </header>
+        <div className='task-list'>
+          {
+            todos.map(({id, title, completed})=>{
+              return <EachTask key={id} id={id} title={title} completed={completed}/>
+            })
+          }
+>>>>>>> faa7e300e78c5621d1ec221d08eb40f994faaf2c
         </div>
       </div>
     </>
