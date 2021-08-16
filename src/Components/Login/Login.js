@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "../NavBar/NavBar";
 
-// Css
-import "./login.css";
-
 const Login = (props) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();

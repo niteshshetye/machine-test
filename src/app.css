@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600&display=swap");
+
+:root {
+  --blueDarkShade-clr: #05386b;
+  --blueLowShade-clr: #379683;
+  --pistaShade-clr: #56db95;
+  --pistaWhiteShade-clr: #8ee4af;
+  --whiteShade-clr: #edf5e1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "STIX Two Text", serif;
+}
+body {
+  background-color: var(--pistaShade-clr);
+}
+input {
+  height: 100%;
+  padding: 5px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+label {
+  color: var(--blueLowShade-clr);
+  font-weight: 600;
+}
+button {
+  outline: none;
+  border: none;
+}
+table {
+  margin: 0 auto;
+  font-size: 1.3rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+  margin: 0px 5px;
+}
+td,
+th {
+  padding: 12px;
+  text-align: center;
+}
+
+tr {
+  background-color: var(--pistaWhiteShade-clr);
+}
+h1 {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+/* ************************* User Component ************************* */
+.user-header {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -15%);
+}
+
+.h2 {
+  color: var(--whiteShade-clr);
+}
+/* ************************* User Component ************************* */
+
+/* ************************* NavBar Component ************************* */
+.navbar {
+  background-color: var(--pistaShade-clr);
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-logo {
+  color: var(--blueDarkShade-clr);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.nav-manu {
+  height: 100%;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 15px;
+  color: var(--blueDarkShade-clr);
+  transition: all 1s;
+}
+
+.nav-links:hover {
+  color: var(--whiteShade-clr);
+  background-color: var(--blueDarkShade-clr);
+}
+/* ************************* NavBar Component ************************* */
+
+/* ************************* Login Component ************************* */
+.login-div {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--pistaWhiteShade-clr);
+  padding: 20px;
+  margin-top: 100px;
+  width: 35%;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.form-input {
+  display: flex;
+  margin: 15px;
+  flex-direction: column;
+  font-size: 1.3rem;
+  height: 66px;
+}
+.btn {
+  font-weight: 600;
+  margin: 15px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  background-color: var(--blueDarkShade-clr);
+  color: var(--whiteShade-clr);
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: all 1s;
+}
+
+.btn:hover {
+  color: var(--blueDarkShade-clr);
+  background-color: var(--pistaWhiteShade-clr);
+}
+/* ************************* Login Component ************************* */
+
+/* ************************* Task Component ************************* */
+.task-header {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.h2 {
+  color: var(--whiteShade-clr);
+}
+
+.goToHome-btn {
+  text-align: center;
+}
+.task-btn {
+  padding: 6px 10px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  background-color: var(--blueDarkShade-clr);
+  color: var(--whiteShade-clr);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(79, 92, 102, 0.15) 0px 2px 6px 2px;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.task-btn:hover {
+  color: var(--blueDarkShade-clr);
+  background-color: var(--pistaWhiteShade-clr);
+}
+
+.add-btn {
+  margin: 8px 0px 0px 250px;
+}
+/* ************************* Task Component ************************* */
+
+/* ************************* Home Component ************************* */
+
+select {
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  margin: 10px 0px;
+  font-size: 1.3rem;
+  background-color: var(--blueDarkShade-clr);
+  color: var(--whiteShade-clr);
+}
+.home-div {
+  margin: 40px 150px;
+}
+p {
+  text-transform: capitalize;
+}
+.show-information {
+  margin-top: 15px;
+}
+/* ************************* Home Component ************************* */
